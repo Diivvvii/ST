@@ -1093,7 +1093,17 @@
       background: linear-gradient(180deg, rgba(22, 40, 63, 0) 55%, rgba(22, 40, 63, .55) 100%);
       pointer-events: none;
     }
-
+    @media (max-width: 640px) {
+   .intro-video {
+    object-fit: contain;
+    object-position: center 42%;
+    opacity: .4;
+   }
+  .intro-tint {
+    background: linear-gradient(180deg, rgba(22, 40, 63, .35) 0%, rgba(22, 40, 63, .25) 45%, rgba(22, 40, 63, .7) 100%);
+   }
+  }
+    
     /* ambient glow blobs for extra motion/depth */
     .intro-glow {
       position: absolute;
